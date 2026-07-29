@@ -38,7 +38,7 @@ if uploaded_file is not None:
     
     if text.strip():
         if st.button("Generate Summary"):
-            with st.spinner("Analyzing document and generating English summary..."):
+            with st.spinner("Analyzing document and generating summary..."):
                 try:
                     model = genai.GenerativeModel("gemini-3.6-flash")
                     
