@@ -40,7 +40,7 @@ if uploaded_file is not None:
         if st.button("Generate Summary"):
             with st.spinner("Analyzing document and generating English summary..."):
                 try:
-                    model = genai.GenerativeModel("gemini-1.5-flash")
+                    model = genai.GenerativeModel("gemini-3.6-flash")
                     
                     # Strict prompt to force English output
                     prompt = f"""
